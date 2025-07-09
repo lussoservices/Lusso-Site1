@@ -700,33 +700,19 @@
       &copy; 2025 Lusso Premium Services. All rights reserved. | Designed for the Sri Lankan Community in Italy
     </div>
   </footer>
+<script>
+  document.getElementById('rateRequestForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Format message
+    const message = `Hello Lusso Services! I would like to know the current transfer rate for sending money to Sri Lanka.`;
 
-  <script>
-    document.getElementById('rateRequestForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Get form values
-      const amount = document.getElementById('amount').value;
-      const receiverBank = document.getElementById('receiver').value;
-      const receiverName = document.getElementById('receiver-name').value;
-      const accountNumber = document.getElementById('account').value;
-      
-      // Format message
-      const message = `Hello Lusso Services! I would like to know the current transfer rate for sending money to Sri Lanka.
-      
-Amount: €${amount}
-Receiver Bank: ${document.getElementById('receiver').options[document.getElementById('receiver').selectedIndex].text}
-Receiver Name: ${receiverName}
-Account Number: ${accountNumber}
+    const whatsappNumber = "393534817003";
+    const encodedMessage = encodeURIComponent(message);
 
-Please provide the best rate for this transfer. Thank you!`;
-      
-      const whatsappNumber = "393534817003";
-      const encodedMessage = encodeURIComponent(message);
-  
-      window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
-    });
-  </script>
-  
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+  });
+</script>
+
 </body>
 </html>
