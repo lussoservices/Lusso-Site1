@@ -629,83 +629,20 @@
             opacity: 0.7;
         }
         
-       /* Mobile menu toggle */
-.mobile-menu-toggle {
-  display: none; /* Hidden by default */
-  cursor: pointer;
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* Center all header children vertically */
-  .luxury-header {
-    grid-template-columns: 1fr;
-    padding: 15px;
-    gap: 15px;
-    justify-items: center; /* Center horizontally */
-  }
 
-  /* Position toggle under logo */
-  .mobile-menu-toggle {
-    display: block;
-    order: 2; /* Places after logo (assumes logo is order 1) */
-    margin: 10px 0;
-  }
 
-  /* Hide regular navigation */
-  nav {
-    display: none;
-    width: 100%;
-    padding: 20px 0;
-    order: 3; /* Places after toggle */
-  }
 
-  /* Active mobile menu */
-  nav.active {
-    display: block;
-    background: rgba(0, 31, 63, 0.95);
-    margin-top: 10px;
-    border-radius: 8px;
-    padding: 20px;
-  }
-
-  /* Center navigation items */
-  nav ul {
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* Desktop styles - Navigation aligned right */
-@media (min-width: 769px) {
-  .luxury-header {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Logo | Navigation */
-    align-items: center;
-  }
-  
-  nav {
-    justify-self: end; /* Align to right */
-  }
-  
-  .mobile-menu-toggle {
-    display: none !important; /* Ensure hidden */
-  }
-}
     </style>
 </head>
 <body>
    <!-- Premium Header -->
 <header class="luxury-header">
     <div class="logo-container">
-      <img src="/logolusso.png" alt="Logo" class="logo-img" />
+      <img src="images/logolusso.png" alt="Logo" class="logo-img" />
     </div>
     
-    <button class="mobile-menu-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-    </button>
+
     
     <nav id="mainNav">
       <ul>
