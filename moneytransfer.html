@@ -509,6 +509,50 @@
     }
 
     /* ============ RESPONSIVE DESIGN ============ */
+      @media (max-width: 900px) {
+            .luxury-header {
+                padding: 1rem;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            nav a {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .luxury-header {
+                flex-direction: column;
+                padding: 1.5rem 1rem;
+            }
+            
+            .logo-container {
+                margin-bottom: 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .luxury-header {
+                padding: 1rem;
+            }
+            
+            nav ul {
+                gap: 0.8rem;
+            }
+            
+            nav a {
+                font-size: 0.95rem;
+            }
+        }
     @media (max-width: 992px) {
       .transfer-hero {
         min-height: 450px;
@@ -529,16 +573,7 @@
         margin-bottom: 1rem;
       }
       
-      nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-      }
-      
-      nav a {
-        font-size: 1rem;
-      }
-      
+   
       .transfer-hero {
         min-height: 400px;
       }
