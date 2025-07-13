@@ -738,6 +738,51 @@
         }
         
         /* Responsive Design */
+
+          @media (max-width: 900px) {
+            .luxury-header {
+                padding: 1rem;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+            
+            nav a {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .luxury-header {
+                flex-direction: column;
+                padding: 1.5rem 1rem;
+            }
+            
+            .logo-container {
+                margin-bottom: 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .luxury-header {
+                padding: 1rem;
+            }
+            
+            nav ul {
+                gap: 0.8rem;
+            }
+            
+            nav a {
+                font-size: 0.95rem;
+            }
+        }
         @media (max-width: 1100px) {
             .features-content {
                 flex-direction: column;
@@ -774,21 +819,6 @@
             
             .logo-container {
                 margin-bottom: 15px;
-            }
-            
-            nav {
-                width: 100%;
-            }
-            
-            nav ul {
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-            
-            nav a {
-                padding: 8px 15px;
-                font-size: 1rem;
             }
             
             .hero-stats {
